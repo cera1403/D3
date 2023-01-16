@@ -1,0 +1,145 @@
+
+<!----------------------------------------------------Tarea grupal: Análisis de tendencias en D3.js ---------------------------------------------------->
+<!--Elizabeth Martínez Ramírez -->
+<!--Fabrizzio Chávez Tejada -->
+<!--César Ramos Aguilar -->
+
+<!----------------------------------------------------Tarea grupal: Análisis de tendencias en D3.js ---------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad grupal: Análisis tendencias en D3.js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <head>
+      <!---------------------------------------------------- Barra de Navegacion ---------------------------------------------------->
+      <div class="p-5 bg-primary text-white text-center">
+        <h1>Actividad Grupal: Análisis tendencias en D3.js</h1>
+        <p>Gráficas en D3</p> 
+      </div>   
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+        <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false" 
+          aria-label="Toggle navigation">  
+           <span class="navbar-toggler-icon"></span>           
+          </button>
+             <!---------------------------------------------------- Logo UNIR ---------------------------------------------------->
+                  <img src="https://mexico.unir.net/wp-content/uploads/sites/6/2018/07/Unir_2021_logo_white.svg" height="60" alt="Unir Logo" loading="lazy"/>
+          
+          <a class="navbar-brand" href="#">GRUPO 3   </a>            
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Elizabeth Martínez Ramírez</a>
+                <a class="nav-link active" aria-current="page" href="#">Fabrizzio Chávez Tejada</a>
+                <a class="nav-link active" aria-current="page" href="#">César Ramos Aguilar</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+      </nav>  
+</head>
+   <!---------------------------------------------------- Inicia cuerpo de la página ---------------------------------------------------->
+<body>
+   <!---------------------------------------------------- Primeras dos Gráficas ---------------------------------------------------->
+   <div class="container .bg-gray"> <div class="p-3 "></div></div>
+  <div class="container-fluid">
+  <div class="container overflow-hidden">
+    <div class="row gx-5">
+      <div class="col">
+        <h5 class="text-uppercase"><b>Grafica 1</b></h5>  
+        <p>
+          Se presentan los montos en Euros de Deuda Pública y el PIB por año.
+        </p>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="Combo1">
+          <option selected>Seleccione un Filtro</option>
+        </select>        
+       <div class="p-3 border bg-light" id="PIB1"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------- Inicia segunda gráfica ---------------------------------------------------->
+<div class="container .bg-gray"> <div class="p-3 "></div></div>
+  <div class="container-fluid">
+  <div class="container overflow-hidden">
+    <div class="row gx-5">
+      <div class="col">
+        <h5 class="text-uppercase"><b>Grafica 2</b></h5> 
+        <p>
+          PIB
+        </p> 
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="Combo3">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+       <div class="p-3 border bg-light " id="Grafica3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container .bg-gray"> <div class="p-3 "></div></div>
+</body>
+   <!---------------------------------------------------- Pie de página ------------------------------------------------------->
+   <footer class="bg-light text-center text-lg-start">  
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><b>Fuente de datos</b></h5>  
+          <p>
+            INE de España
+          Por sus siglas en español Instituto Nacional de Estadística, es uno de los Institutos
+          de España que agrupa los productos estadísticos que produce indicadores y encuestas
+          sociodemográficos, así como respuesta a las necesidades de información en el campo social,
+          tanto en el ámbito nacional como internacional.
+          Así también, concentra y facilita una infraestructura estadística y tecnológica común
+          que permite un desarrollo estandarizado, eficiente y de calidad de los productos y servicios
+          estadísticos que el sistema nacional ofrece.
+
+          </p>
+        </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><b>Análisis tendencias en D3.js</b></h5>  
+          <p>
+            Toda vez que las fuentes de datos a utilizar en esta  actividad, puede ser
+            en utilizando cualquiera de  los conjuntos  de  datos  disponibles
+            en  el catálogo de fuentes de datos abiertas, los alumnos utilizarán
+            sus propias fuentes de datos para la realización del caso,
+            tomando como referencia cualquiera de las fuentes existentes en Internet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <b>Maestría en Análisis y Visualización de Datos| Herramientas de Visualización de Datos </b>
+      <p>
+        Elizabeth Martínez Ramírez | Fabrizzio Chávez Tejada | César Ramos Aguilar
+      </p>
+      <p><b>Enero 2023</b></p>
+    </div>
+     <!---------------------------------------------------- Imagen  ------------------------------------------------------->
+    <img src="https://thumbs.dreamstime.com/z/banner-de-desarrollo-web-frontend-html-desarrollar-lenguaje-inform%C3%A1tico-para-la-codificaci%C3%B3n-sitios-multimedia-mixto-212039461.jpg" class="expandimage" alt="...">
+    
+  </footer>
+   <!---------------------------------------------------- Scripts--------- ---------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+   <!---------------------------------------------------- Scripts para cada Grafica------------------------------------------------------------->
+<script src="js/app.js"></script>
+<script src="js/app2.js"></script>
+
+   <!---------------------------------------------------- Fin ------------------------------------------------------------->
+
+</html>
