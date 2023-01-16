@@ -15,18 +15,3 @@
     width: 100%;   
     height: 50%;
   }
-
-  .etiquetax{
-    font-size: 8pt;
-    text-anchor: middle;
-    font-family:'Lucida Sans';
-    font-weight: bold;
-}
-
-.colp{
-  width: 50%;
-}
-
-.container-fluidx{
-  width: 80%;
-}
