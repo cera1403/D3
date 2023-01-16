@@ -2,11 +2,12 @@
 const WidthCaja = 480;
 const HeightCaja = 550;
 let primeracolumna = ""
-////////////////////////////////////////////////////////////////////////////////GRAFICA 1//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////GRAFICAS (1)//////////////////////////////////////////////////////////////////////////
 
 const draw = async (el = "#Grafica1") => {
   let data = await d3.csv(
-    "https://raw.githubusercontent.com/ViperCode-Javier/D3/main/datatrabajo1.csv",
+    "https://raw.githubusercontent.com/cera1403/D3/main/Datasets/dataPib.csv",
+    <!--"https://raw.githubusercontent.com/ViperCode-Javier/D3/main/datatrabajo1.csv",-->
     d3.autoType
   );
 
@@ -37,13 +38,13 @@ const draw = async (el = "#Grafica1") => {
 
   let max = d3.max(data.map((d) => d[primeracolumna]));
  
-  //Ordenamos y Sacamos el Maximo
+  //Ordenamos y Sacamos el Máximo
   data.sort(function (a, b) {
     return d3.descending(a[primeracolumna], b[primeracolumna]);
   });
 
 // Accessors
-  const yAccessor = (d) => d.Municipio
+  const yAccessor = (d) => d.Año
   const margin = { top: 20, right: 10, bottom: 40, left: 90 },
     width = WidthCaja - margin.left - margin.right,
     height = HeightCaja - margin.top - margin.bottom;
@@ -70,7 +71,7 @@ const draw = async (el = "#Grafica1") => {
     .range([0, height])
   .domain(
       data.map(function (d) {
-        return d.Municipio;
+        return d.Año;
      })    )
      .padding(0.1);
 
