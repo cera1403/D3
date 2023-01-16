@@ -4,11 +4,10 @@ const HeightCaja = 550;
 let primeracolumna = ""
 ////////////////////////////////////////////////////////////////////////////////GRAFICAS (1)//////////////////////////////////////////////////////////////////////////
 
-const draw = async (el = "#Grafica1") => {
+const draw = async (el = "#PIB1") => {
   let data = await d3.csv(
     "https://raw.githubusercontent.com/cera1403/D3/main/Datasets/dataPib.csv",
-    <!--"https://raw.githubusercontent.com/ViperCode-Javier/D3/main/datatrabajo1.csv",-->
-    d3.autoType
+  d3.autoType
   );
 
   const ComboSelect = d3.select("#Combo1");
@@ -50,7 +49,7 @@ const draw = async (el = "#Grafica1") => {
     height = HeightCaja - margin.top - margin.bottom;
 
   const svg = d3
-    .select("#Grafica1")
+    .select("#PIB1")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -71,7 +70,7 @@ const draw = async (el = "#Grafica1") => {
     .range([0, height])
   .domain(
       data.map(function (d) {
-        return d.año;
+        return d.Año;
      })    )
      .padding(0.1);
 
