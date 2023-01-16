@@ -39,7 +39,7 @@ const draw = async (el = "#PIB1") => {
  
   //Ordenamos y Sacamos el Máximo
   data.sort(function (a, b) {
-    return d3.descending(a[primeracolumna], b[primeracolumna]);
+    return d3.ascending(a[primeracolumna], b[primeracolumna]);
   });
 
 // Accessors
