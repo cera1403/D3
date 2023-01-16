@@ -71,7 +71,7 @@ const draw = async (el = "#Grafica1") => {
     .range([0, height])
   .domain(
       data.map(function (d) {
-        return d.Año;
+        return d.año;
      })    )
      .padding(0.1);
 
