@@ -1,56 +1,56 @@
-﻿Cve,Periodo,Año,Deuda pública,Producto Interior Bruto (PIB)
-1,Diciembre,1994,"249.507,62",
-2,Diciembre,1995,"283.457,29",
-3,Diciembre,1996,"319.975,81",
-4,Diciembre,1997,"333.627,25",
-5,Diciembre,1998,"346.416,96",
-6,Diciembre,1999,"362.223,47",
-7,Diciembre,2000,"374.557,24",
-8,Diciembre,2001,"378.883,42",
-9,Diciembre,2002,"384.145,34",
-10,Diciembre,2003,"382.775,03",
-11,Diciembre,2004,"389.887,93",
-12,Diciembre,2005,"393.479,09",
-13,Diciembre,2006,"392.132,17",
-14,Diciembre,2007,"384.661,96",
-15,Diciembre,2008,"440.620,97",
-16,Diciembre,2009,"569.535,36",
-17,Diciembre,2010,"649.152,53",
-18,Diciembre,2011,"743.043,16",
-19,Diciembre,2012,"889.909,39",
-20,Diciembre,2013,"977.311,94",
-21,Diciembre,2014,"1.039.388,25",
-22,Diciembre,2015,"1.070.078,97",
-23,Diciembre,2016,"1.104.553,96",
-24,Diciembre,2017,"1.145.097,34",
-25,Diciembre,2018,"1.173.350,13",
-26,Diciembre,2019,"1.188.859,49",
-27,Diciembre,2020,"1.345.569,81",
-28,Diciembre,2021,"1.427.235,37",
-2,Trimestre 4,1995,,460.588
-3,Trimestre 4,1996,,489.203
-4,Trimestre 4,1997,,519.268
-5,Trimestre 4,1998,,555.993
-6,Trimestre 4,1999,,595.723
-7,Trimestre 4,2000,,647.851
-8,Trimestre 4,2001,,700.993
-9,Trimestre 4,2002,,749.552
-10,Trimestre 4,2003,,802.266
-11,Trimestre 4,2004,,859.437
-12,Trimestre 4,2005,,927.357
-13,Trimestre 4,2006,,1.003.823
-,Trimestre 4,2007,,1.075.539
-15,Trimestre 4,2008,,1.109.541
-16,Trimestre 4,2009,,1.069.323
-17,Trimestre 4,2010,,1.072.709
-18,Trimestre 4,2011,,1.063.763
-19,Trimestre 4,2012,,1.031.104
-20,Trimestre 4,2013,,1.020.677
-21,Trimestre 4,2014,,1.032.608
-22,Trimestre 4,2015,,1.078.092
-23,Trimestre 4,2016,,1.114.420
-24,Trimestre 4,2017,,1.162.492
-25,Trimestre 4,2018,,1.203.859
-26,Trimestre 4,2019,,1.245.513
-27,Trimestre 4,2020,,1.117.989
-28,Trimestre 4,2021,,1.206.842
+﻿Cve,Año,Periodo,Deuda pública,Producto Interior Bruto (PIB)
+1,1994,Diciembre,"249.507,62",
+2,1995,Diciembre,"283.457,29",
+3,1996,Diciembre,"319.975,81",
+4,1997,Diciembre,"333.627,25",
+5,1998,Diciembre,"346.416,96",
+6,1999,Diciembre,"362.223,47",
+7,2000,Diciembre,"374.557,24",
+8,2001,Diciembre,"378.883,42",
+9,2002,Diciembre,"384.145,34",
+10,2003,Diciembre,"382.775,03",
+11,2004,Diciembre,"389.887,93",
+12,2005,Diciembre,"393.479,09",
+13,2006,Diciembre,"392.132,17",
+14,2007,Diciembre,"384.661,96",
+15,2008,Diciembre,"440.620,97",
+16,2009,Diciembre,"569.535,36",
+17,2010,Diciembre,"649.152,53",
+18,2011,Diciembre,"743.043,16",
+19,2012,Diciembre,"889.909,39",
+20,2013,Diciembre,"977.311,94",
+21,2014,Diciembre,"1.039.388,25",
+22,2015,Diciembre,"1.070.078,97",
+23,2016,Diciembre,"1.104.553,96",
+24,2017,Diciembre,"1.145.097,34",
+25,2018,Diciembre,"1.173.350,13",
+26,2019,Diciembre,"1.188.859,49",
+27,2020,Diciembre,"1.345.569,81",
+28,2021,Diciembre,"1.427.235,37",
+2,1995,Trimestre 4,,460.588
+3,1996,Trimestre 4,,489.203
+4,1997,Trimestre 4,,519.268
+5,1998,Trimestre 4,,555.993
+6,1999,Trimestre 4,,595.723
+7,2000,Trimestre 4,,647.851
+8,2001,Trimestre 4,,700.993
+9,2002,Trimestre 4,,749.552
+10,2003,Trimestre 4,,802.266
+11,2004,Trimestre 4,,859.437
+12,2005,Trimestre 4,,927.357
+13,2006,Trimestre 4,,1.003.823
+,2007,Trimestre 4,,1.075.539
+15,2008,Trimestre 4,,1.109.541
+16,2009,Trimestre 4,,1.069.323
+17,2010,Trimestre 4,,1.072.709
+18,2011,Trimestre 4,,1.063.763
+19,2012,Trimestre 4,,1.031.104
+20,2013,Trimestre 4,,1.020.677
+21,2014,Trimestre 4,,1.032.608
+22,2015,Trimestre 4,,1.078.092
+23,2016,Trimestre 4,,1.114.420
+24,2017,Trimestre 4,,1.162.492
+25,2018,Trimestre 4,,1.203.859
+26,2019,Trimestre 4,,1.245.513
+27,2020,Trimestre 4,,1.117.989
+28,2021,Trimestre 4,,1.206.842
