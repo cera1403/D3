@@ -1,4 +1,4 @@
-/ source: https://observablehq.com/@d3/bar-chart
+// source: https://observablehq.com/@d3/bar-chart
 function BarChart(
   data,
   {

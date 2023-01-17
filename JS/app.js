@@ -1,49 +1,45 @@
 /////////////////////////////////////////////////////////////////////////////////CONSTANTESGLOBALES///////////////////////////////////////////////////////////////////
 const WidthCaja = 480;
 const HeightCaja = 550;
-let primeracolumna = ""
+let primeracolumna = "";
 ////////////////////////////////////////////////////////////////////////////////GRAFICAS (1)//////////////////////////////////////////////////////////////////////////
 
 const draw = async (el = "#PIB1") => {
   let data = await d3.csv(
     "https://raw.githubusercontent.com/cera1403/D3/main/Datasets/dataPib.csv",
-  d3.autoType
+    d3.autoType
   );
 
   const ComboSelect = d3.select("#Combo1");
   let len = document.getElementById("Combo1").length;
   let val = document.getElementById("Combo1").value;
 
-  if (len==1) {
+  if (len == 1) {
     let headerNames = data.columns;
-      ComboSelect.selectAll("option")
+    ComboSelect.selectAll("option")
       .data(headerNames)
       .enter()
       .append("option")
       .attr("value", (d) => d)
-      .text((d) => d); 
+      .text((d) => d);
   }
-  
+
   //Seleccionamos el primer filtro
   if (ComboSelect.empty()) {
-   primeracolumna = data.columns[1]; 
-     
-  }
-  else
-  {
-    primeracolumna =val 
-  
+    primeracolumna = data.columns[1];
+  } else {
+    primeracolumna = val;
   }
 
   let max = d3.max(data.map((d) => d[primeracolumna]));
- 
+
   //Ordenamos y Sacamos el Máximo
   data.sort(function (a, b) {
     return d3.ascending(a[primeracolumna], b[primeracolumna]);
   });
 
-// Accessors
-  const yAccessor = (d) => d.Año
+  // Accessors
+  const yAccessor = (d) => d.Año;
   const margin = { top: 20, right: 10, bottom: 40, left: 90 },
     width = WidthCaja - margin.left - margin.right,
     height = HeightCaja - margin.top - margin.bottom;
@@ -56,7 +52,7 @@ const draw = async (el = "#PIB1") => {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
- const x = d3.scaleLinear().domain([0, max]).range([0, width]);
+  const x = d3.scaleLinear().domain([0, max]).range([0, width]);
   svg
     .append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -68,11 +64,12 @@ const draw = async (el = "#PIB1") => {
   const y = d3
     .scaleBand()
     .range([0, height])
-  .domain(
+    .domain(
       data.map(function (d) {
         return d.Año;
-     })    )
-     .padding(0.1);
+      })
+    )
+    .padding(0.1);
 
   svg.append("g").call(d3.axisLeft(y));
 
@@ -87,29 +84,26 @@ const draw = async (el = "#PIB1") => {
     .attr("x", x(0))
     .attr("y", (d) => y(yAccessor(d)))
     //.attr("width", (d) => x(xAccessor(d)))
-    .attr("width",  function(d) { return x(d[primeracolumna]); })
+    .attr("width", function (d) {
+      return x(d[primeracolumna]);
+    })
     .attr("height", y.bandwidth())
-    .attr("fill", "#457b9d");   
+    .attr("fill", "#457b9d");
 
-  svg 
-  .selectAll("text")
-  .data(data)
-  .enter()
-  .append("text")
-  .attr("x", x(0))
-  .attr("y", (d) => y(yAccessor(d)))
-  .text(function(d) {x(d[primeracolumna]);})
-   
+  svg
+    .selectAll("text")
+    .data(data)
+    .enter()
+    .append("text")
+    .attr("x", x(0))
+    .attr("y", (d) => y(yAccessor(d)))
+    .text(function (d) {
+      x(d[primeracolumna]);
+    });
 };
-draw()
+draw();
 
-d3.select("#Combo1").on("change", () => {    
- d3.select("svg")
- .remove(); 
- draw()
-})
-
-
-
-
-
+d3.select("#Combo1").on("change", () => {
+  d3.select("svg").remove();
+  draw();
+});

@@ -1,7 +1,6 @@
-
 (async () => {
   const data = await d3.csv(
-    "data/compraventa_de_viviendas_anual.csv",
+    "Datasets/compraventa_de_viviendas_anual.csv",
     d3.autoType
   );
 
@@ -22,7 +21,3 @@
 
   d3.select("#graf").append(() => barchart);
 })();
-
-
-
-
